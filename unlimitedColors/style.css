@@ -1,0 +1,4 @@
+/* Ensure the transition effect applies to inline style changes */
+body {
+    transition: background-color 1s ease;
+}
