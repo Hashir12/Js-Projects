@@ -41,6 +41,7 @@ function validateGuess(guess) {
 function checkGuess(guess) {
     if(guess === randomNumber) {
         displayMessage(`You gussed it right`)
+        endGame()
     } else if(guess < randomNumber) {
         displayMessage(`Number is too less`)
     } else if(guess > randomNumber)  {
@@ -71,6 +72,7 @@ function newGame() {
         submit.removeAttribute('disabled')
         startOver.removeChild(p)
         playGame = true
+        lowOrHi.innerHTML = ''
     })
 }
 
